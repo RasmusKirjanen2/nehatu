@@ -13,15 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+
 
 Route::get('/products/create', function () {
     return view('products/create');
 });
 
-
+Route::get('/',[\App\Http\Controllers\ProductController::class,'products']);
 Route::get('/products',[\App\Http\Controllers\ProductController::class,'products']);
 
 Route::get('/products/{product}',[\App\Http\Controllers\ProductController::class,'show']);

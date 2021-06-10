@@ -13,7 +13,6 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(11)->create();
 
-        \App\Models\User::factory(11)->create();
         // \App\Models\User::factory(10)->create();
         // Product::factory()->times(100)->create(); //  juhul kui tahad otse databaseseederist seedida pead lisama ka use App\Models\Product;
         $this->call(ProductSeeder::class);  //  kui tahad otse ProductSeeder.php failist käivitada

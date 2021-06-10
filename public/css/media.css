@@ -13,5 +13,9 @@
     .footer-btns{
         text-align: left;
     }
+    .panel-names{
+        display:none;
+    }
+
 
 }

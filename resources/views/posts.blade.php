@@ -7,11 +7,11 @@
             <a href="products/create" class="btn btn-info create-btn">Create</a>
 
 
-            <div class="row">
+            <div class="row panel-names">
                 <div class="col-md-1 col-12">id</div>
-                <div class="col-md-2 col-12">Name</div>
-                <div class="col-md-3 col-12">created</div>
-                <div class="col-md-3 col-12">Modified</div>
+                <div class="col-md-4 col-12">Name</div>
+                <div class="col-md-2 col-12">created</div>
+                <div class="col-md-2 col-12">Modified</div>
                 <div class="col-md-3 col-12">actions</div>
             </div>
 
@@ -21,13 +21,13 @@
                     <div class="col-md-1 col-12">
                         <p>{{ $product->id }}<p>
                     </div>
-                    <div class="col-md-2 col-12">
+                    <div class="col-md-4 col-12">
                         <p>{{ $product->product_name }}<p>
                     </div>
-                    <div class="col-md-3 col-12">
+                    <div class="col-md-2 col-12">
                         <p>{{ $product->created_at }}<p>
                     </div>
-                    <div class="col-md-3 col-12">
+                    <div class="col-md-2 col-12">
                         <p>{{ $product->updated_at }}<p>
                     </div>
                     <div class="col-md-3 col-12">

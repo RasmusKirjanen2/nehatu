@@ -1,27 +1,80 @@
 $color1:#f2f2f2;
 $color2:#393939;
-$color3:grey;
+$color3:#e45f00;
 $color4:#fbfbfb;
 $color5:#ff4700;
 $color6:#66b32d;
 
-body{
+body, html{
     background-color: $color1;
-    font-family:Arial;
+    font-family:Arial; 
+    font-size:16px;
+    line-height: 1.6;
+    height: 100%;
 }
+
+
+.wrapper{
+    max-width:1440px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Arial Rounded MT", Arial;
+}
+
+
 
 ul {
     list-style-type: none;
     padding: 0px;
 }
 
+.title{
+    color:$color3;
+}
+
+.main-title, .menu-title{
+    margin-top:15px;
+    margin-bottom:15px;
+    color:$color3;
+}
+
+.product-title{
+    color:$color2;
+}
+
+
+
+a{
+    border: none;
+    outline: none;
+    color:black;
+}
+
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+.container{
+    max-width:1440px;
+}
+
+
+
 .navbar {
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
 .nav-item {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .nav-item a {
@@ -38,43 +91,12 @@ ul {
     font-size: 18px;
 }
 
-.title{
-    color:$color2;
-}
 
-a{
-    border: none;
-    outline: none;
-}
-
-a:hover{
-    color:black;
-    text-decoration: none;
-}
-
-a:active {
-    text-decoration: none;
-}
 textarea:focus, input:focus{
     outline: none;
 }
 
 
-
-
-.box1,
-.box2 {
-    background: $color3;
-    height: 360px;
-}
-
-.box11 {
-    padding-right: 6px;
-}
-
-.box22 {
-    padding-left: 6px;
-}
 
 .row1 {
     margin-bottom: 50px;
@@ -84,14 +106,10 @@ textarea:focus, input:focus{
     margin-bottom: 50px;
 }
 
-.row4 {
-    margin-bottom: 50px;
+.row3{
+    justify-content:flex-end;     
 }
 
-.box3 {
-    background: $color3;
-    height: 200px;
-}
 
 .new-products {
     margin-top: 20px;
@@ -115,23 +133,15 @@ textarea:focus, input:focus{
 
 .add-center {
     justify-content: space-around;
-    margin-top: 20px;
 }
 
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6 {
+.image {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
-h2{
-    margin:20px;
-}
+
 
 h5{
     padding-top:20px;
@@ -166,17 +176,10 @@ h5{
     height:140px;
 }
 
-.col-md-4{
-    margin-bottom:30px;
-}
+
 
 .form-row{
     padding-bottom:10px;
-}
-
-.img-fluid{
-    object-fit: scale-down;
-    height:210px;
 }
 
 .product-desc{
@@ -187,9 +190,14 @@ h5{
     margin-bottom:15px;
 }
 
-#product-desc-textarea, #comment-textarea{
+#comment-textarea{
+    height:200px;
+    max-width:600px;
+}
+#product-desc-textarea{
     height:200px;
 }
+
 
 .logout{
     border: none;
@@ -213,44 +221,10 @@ h5{
     padding:20px;
     background-color:$color4;
     border-radius:4px;
-}
-
-.cart-container{
-    display:flex;
+    margin-bottom:30px;
 }
 
 
-.cart-nr-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:25px;
-    height:25px;
-    line-height:25px;
-    background-color: $color5;
-    border-radius:50%;
-    color:white;
-    font-size: 16px;
-    font-weight: bold;
-    margin-left:5px;
-}
-
-.cart-nr{
-    font-family: Arial;
-}
-
-.price-background{
-    background:$color6;
-    padding:4px;
-    border-radius:10%;
-    color:white;
-    font-weight: bold;
-}
-.cart-list-container{
-    margin: 0 auto;
-    margin-top:20px;
-    padding:0px;
-}
 .list-group{
     width:100%;
 }
@@ -260,7 +234,7 @@ h5{
 }
 
 .create-btn{
-    margin:10px 0px 10px;
+    margin:15px 0px 15px;
 }
 
 .btn-primary{
@@ -276,14 +250,71 @@ h5{
 }
 
 .show-container{
-    max-width: 500px;
+    padding-top:15px;
+    max-width: 800px;
 }
 
 .dashboard form{
     margin:0px;
 }
+.dashboard{
+    margin-left:15px;
+}
+
+.flag-icon-us {
+    background-image: url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/flags/4x3/us.svg);
+}
 
 
+.flag-icon {
+    position: relative;
+    display: inline-block;
+    width: 1.33333333em;
+    line-height: 1em;
+}
+
+.flag-icon, .flag-icon-background {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.align-vertical-middle{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.selectpicker{
+    margin-right:10px;
+}
+
+.bg-color1{
+    background:#ebebeb;
+    padding:20px 0px 30px;
+}
+
+.bg-color2{
+    padding:20px 0px 20px;
+}
+
+.show-btn:link, .show-btn:visited{
+    background-color: #f9922a;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width:120px;
+    border-radius:6px;
+    font-size:20px;
+}
 
 
+.show-btn:hover, show-btn:active {
+    background-color:#ff8000ed;
+  }
 
+
+.carousel{
+    padding:0px;
+}

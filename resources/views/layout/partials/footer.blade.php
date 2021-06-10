@@ -1,23 +1,27 @@
-<div class="container">
-    <div class="row row5">
-        <div class="col-md-3 col-sm-10">
-            <img src="/css/images/Vector.svg">
-        </div>
-        <div class="col-md-3 col-sm-10 center">
-            <ul>
-                <li><a href="">E-pood</a></li>
-                <li><a href="">Kontaktid</a></li>
-                <li><a href="">Meist</a></li>
-                <li><a href="">Privaatsuspoliitika</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3 col-sm-10 center">
-            <p>Leia meid ka:</p>
-            <img src="/css/images/pngegg.png">
-        </div>
-        <div class="col-md-3 col-sm-10 footer-btns">
-            <img src="/css/images/Group1.png">
-            <img src="/css/images/shopping-cart 1.png">
+<div class="bg-color2">
+    <div class="container">
+        <div class="row row5">
+            <div class="col-md-3 col-sm-10">
+                <img src="/css/images/logo.svg">
+            </div>
+            <div class="col-md-3 col-sm-10 center">
+                <ul>
+                    <li><h5>Kontakt</h5></li>
+                    <li>+372 630 4001</li>
+                 
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-10 center">
+                <h5>Leia meid ka:</h5>
+                <img src="/css/images/pngegg.png">
+            </div>
+            <div class="col-md-3 col-sm-10 footer-btns">
+               <ul> 
+                    <h5>Ettevõtte asukoht:</h5>
+                    <li>Parda 8</li>
+                    <li>10151 Tallinn</li>
+               </ul>
+            </div>
         </div>
     </div>
 </div>

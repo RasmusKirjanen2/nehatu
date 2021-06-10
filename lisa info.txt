@@ -1,1 +1,0 @@
-siia projecti andmebaasi tabelisse lisasin ma factory_img ja upload_img, product_img asemele
