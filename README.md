@@ -6,7 +6,7 @@ Composer 1.10.13
 
 Installation
 
-cd moodul3
+cd nehatu
 
 composer install
 
